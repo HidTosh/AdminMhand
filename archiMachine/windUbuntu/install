@@ -1,0 +1,27 @@
+/*
+M R
+*/
+
+Pour faire cohabiter ubuntu et windows sur la même machien : 
+
++ Partions (4 partions primaire autorisé) :
+    1 - boot(Réservé au système)      1% HDD
+    2 - Windows                       30% HDD
+    3 - Ubuntu........................30% HDD
+    4 - data..........................39% HDD
+
++ Install :
+1 - Commencer par l'installation de windows choisir une version dadapté
+    au puissance de la machine et gratuite :
+    link to use : https://www.microsoft.com/fr-fr/software-download/windows8ISO 
+
+2 - Intaller ubuntu choisir la version LTS la plus récente :
+    crée une clée USB ou un CD de démmarage 
+    link to use : https://www.ubuntu.com/download/desktop
+
+
+    Création d'un live-USB depuis Ubuntu : 
+    https://doc.ubuntu-fr.org/gnome-disk-utility
+
+
+
