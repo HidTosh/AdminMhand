@@ -1,0 +1,40 @@
+Install and compile SBT
+
+## https://gist.github.com/bigsnarfdude/b2eb1cabfdaf7e62a8fc
+
+# scala install
+wget www.scala-lang.org/files/archive/scala-2.11.7.deb
+sudo dpkg -i scala-2.11.7.deb
+
+ 
+# sbt installation
+echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 642AC823
+sudo apt-get update
+sudo apt-get install sbt
+
+
+# java install
+sudo apt-get install python-software-properties
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+
+## Case error try this instruction : 
+
+//[info] Loading project definition from /home/hid/workarea/git/API/Fotonower/project
+//java.lang.RuntimeException: Error opening zip file: scala-arm_2.10-1.3.jar
+
+1 - Using the Java 8 version of OpenJDK resolved this issue for me.
+
+$~ sudo update-alternatives --config java
+$~ sudo update-alternatives --config javac
+
+https://stackoverflow.com/questions/38602889/failed-to-initialize-compiler-object-java-lang-object-in-compiler-mirror-not-fo
+
+
+//[error] (*:update) sbt.ResolveException: unresolved dependency:
+//com.fasterxml.jackson.core#jackson-annotations;2.2.2: several problems occurred while resolving 
+//dependency: com.fasterxml.jackson.core#jackson-annotations;2.2.2 {compile=[compile(*), master(*)], //runtime=[runtime(*)]}:
+
+2 - copy directory .ivy2 cache to home 
