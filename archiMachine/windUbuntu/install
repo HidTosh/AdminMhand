@@ -23,5 +23,11 @@ Pour faire cohabiter ubuntu et windows sur la même machien :
     Création d'un live-USB depuis Ubuntu : 
     https://doc.ubuntu-fr.org/gnome-disk-utility
 
+    Gestion de disc Ubuntu Gparted https://doc.ubuntu-fr.org/gparted
 
+    Modfier l'ordre de boot ubuntu windows : 
+    https://doc.ubuntu-fr.org/grub-customizer
+
+    Install chrome ubuntu :
+    https://doc.ubuntu-fr.org/google_chrome
 

@@ -1,0 +1,5 @@
+Install and configure Visuel Ubuntu : 
+https://code.visualstudio.com/Download
+
+
+https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-14-04
